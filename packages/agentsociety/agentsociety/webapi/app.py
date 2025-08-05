@@ -133,7 +133,7 @@ def create_app(
     )
 
     # try to load commercial features
-    _try_load_commercial_features(app, commercial)
+    # _try_load_commercial_features(app, commercial)
 
     # add CORS middleware
     app.add_middleware(

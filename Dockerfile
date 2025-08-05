@@ -7,7 +7,7 @@ RUN npm config set registry https://registry.npmmirror.com
 COPY ./frontend/package.json ./frontend/package-lock.json ./
 RUN npm ci
 COPY ./frontend/ .
-ENV VITE_WITH_AUTH=true
+ENV VITE_WITH_AUTH=false
 RUN npm run build
 
 # Stage 2: Copy the compiled frontend code to the python image
