@@ -283,7 +283,7 @@ class LLM:
             if config.provider == LLMProviderType.OpenAI:
                 ...
             elif config.provider == LLMProviderType.DeepSeek:
-                base_url = "https://api.deepseek.com/v1"
+                base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
             elif config.provider == LLMProviderType.Qwen:
                 base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
             elif config.provider == LLMProviderType.SiliconFlow:
